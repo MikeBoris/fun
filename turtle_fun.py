@@ -52,7 +52,9 @@ def randomCircle():
 	# set down pen and draw circle of random radius length
 	pen.pendown()
 	radius = random.randint(10, 200)
+	pen.begin_fill()
 	pen.circle(radius)
+	pen.end_fill()
 
 if __name__ == '__main__':
 	pen = Pen()
